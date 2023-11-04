@@ -1,0 +1,49 @@
+- Account
+    post login DONE
+        sends email and password
+        returns true/false
+            if true returns with account id and login token
+    get account info DONE
+        sends account id(urlparam)
+        returns username, email, bio	
+    post signup DONE
+        sends signup data
+	returns account id and login token
+    post update info DONE
+    	sends account id, updated data
+	returns account id, login token
+
+- Classes
+    get user Classes DONE
+        sends account id(urlparam)
+        returns list of joined classes
+    post join class DONE
+        sends account id, class id
+        returns joined class info
+    post new class DONE
+        sends account id, class name
+        returns new class id
+    post new subject DONE
+        sends class id, subject name
+        returns nothing
+
+- Assignments
+    get class Assignments DONE
+        sends class id
+        returns all public assignments in the class
+    post self assignments DONE
+	sends account id, class id
+	returns all assignments by the user in a class
+    post new assignment DONE
+        sends account id, class id, assignment data
+        returns new assignment id
+    post delete assignment DONE
+        sends account id, assignment id
+        returns nothing
+    post update assignment DONE
+        sends assignment id, new data
+        returns updated assignment id
+    post specific assignment DONE
+        sends assignment id
+        returns assignment data, owner id and name, subjects in class
+

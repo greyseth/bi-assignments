@@ -1,0 +1,268 @@
+body {
+  padding-top: calc(var(--header-height));
+  background-color: var(--primary-color);
+}
+
+.dashboard-loading {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.dashboard-loading h2,
+.dashboard-loading p {
+  width: 100%;
+  text-align: center;
+  font-family: "title-bold", sans-serif;
+  font-size: 2.5rem;
+}
+
+.dashboard-loading p {
+  font-size: 1.75rem;
+  font-family: "text-bold", sans-serif;
+}
+
+.dash-controls {
+  width: 100%;
+  padding: 2% 5%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dash-controls button {
+  padding: 1% 2%;
+
+  display: flex;
+  gap: 10px;
+
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+
+  transition: 0.5s;
+}
+
+.dash-controls button:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+.class-list {
+  width: 100%;
+  padding: 2% 5%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2%;
+  row-gap: 5%;
+}
+
+.class-list li {
+  padding: 4%;
+  background-color: var(--secondary-color);
+
+  border-radius: 10px;
+  border: 2px solid var(--text-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.class-list li h3,
+.class-list li span {
+  cursor: pointer;
+}
+
+.class-list li h3 {
+  font-family: "title-bold", sans-serif;
+  font-size: 2rem;
+}
+
+.class-list li p {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+}
+
+.class-list li span {
+  text-decoration: underline;
+}
+
+.no-class {
+  width: 100%;
+  padding: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-class h2 {
+  font-family: "title-bold", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.no-class button {
+  padding: 2%;
+  width: 10%;
+}
+
+.class-menu-container {
+  width: 100%;
+  height: 100vh;
+
+  padding-top: calc(var(--header-height) + var(--header-margin));
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 998;
+
+  background-color: rgba(39, 40, 41, 0.5);
+}
+
+.class-menu {
+  width: 40%;
+  min-width: 500px;
+  height: 80vh;
+
+  margin: 0px auto;
+
+  background-color: var(--primary-color);
+
+  border: 2px solid var(--tertiary-color);
+  border-radius: 25px;
+}
+
+.class-menu-header {
+  width: 100%;
+  height: 15%;
+  padding: 2% 5%;
+  border-bottom: 2px solid var(--tertiary-color);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.class-menu-header h3 {
+  font-family: "title-regular", sans-serif;
+  font-size: 1.5rem;
+}
+
+.class-menu-header button {
+  aspect-ratio: 1/1;
+  height: auto;
+  background: none;
+  border: none;
+}
+
+.class-menu-header button img {
+  width: 100%;
+  height: 100%;
+}
+
+.class-menu-buttons {
+  width: 100%;
+  padding: 2% 5%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.class-menu-buttons button {
+  background-color: var(--primary-color);
+  padding: 2%;
+  border-radius: 25px;
+  border: none;
+}
+
+.class-menu-buttons button p {
+  text-align: left;
+}
+
+.class-menu-buttons button p:first-child {
+  font-family: "title-regular", sans-serif;
+  font-size: 2rem;
+}
+
+.class-menu-buttons button p:last-child {
+  font-size: 0.85rem;
+}
+
+.class-menu-separator {
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary-color);
+}
+
+.class-menu-buttons .selected {
+  border: 2px solid var(--text-color);
+}
+
+.class-menu-input {
+  margin-top: 5%;
+  padding: 0px 5%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.class-menu-input input {
+  width: 50%;
+  padding: 2% 4%;
+  background-color: var(--tertiary-color);
+  border-radius: 10px;
+  border: none;
+  color: var(--primary-color);
+}
+
+.class-menu-input button {
+  width: 15%;
+  background-color: var(--primary-item-color);
+  border-radius: 15px;
+  border: none;
+  transition: 0.5s;
+}
+
+.class-menu-input button:hover {
+  border: 2px solid var(--text-color);
+  background-color: var(--secondary-item-color);
+}
+
+.class-menu-loading {
+  width: 100%;
+  padding: 5%;
+  font-size: 1.25rem;
+}
+
+.class-menu-error {
+  width: 100%;
+  padding: 5%;
+  font-size: 1.25rem;
+}
+
+.class-menu-error p {
+  color: red;
+  margin-bottom: 5%;
+}
+
+.class-menu-error button {
+  width: 30%;
+  padding: 2% 4%;
+  margin: 0px auto;
+  background-color: var(--primary-item-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.class-menu-error button:hover {
+  background-color: var(--secondary-item-color);
+  border: 2px solid var(--text-color);
+}

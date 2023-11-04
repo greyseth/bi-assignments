@@ -1,0 +1,5 @@
+Primary background color: #272829
+Secondary color: #61677A
+Tertiary color: #D8D9DA
+
+Primary text color: #FFF6E0

@@ -1,0 +1,48 @@
+.user-content {
+  width: 100%;
+  padding: var(--header-height) 15%;
+}
+
+.user-content > h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "title-bold", sans-serif;
+  font-size: 2.25rem;
+}
+
+.user-content > p {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.user-content input,
+.user-content textarea {
+  width: 100%;
+  padding: 2% 5%;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 3%;
+  font-size: 1.25rem;
+}
+
+.user-content-submit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.user-content-submit button {
+  padding: 2% 4%;
+}
+
+.user-content-submit button:last-child {
+  background-color: red;
+}
+
+.user-content-submit button:last-child:hover {
+  background-color: #6b0000;
+}
