@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import "./login.css";
 
+import promoImage from "../../assets/img/promo-img.jpg";
+
 import LoginForm from "./components/LoginForm";
 import SignupForm from "./components/SignupForm";
 import LoginHeader from "./components/LoginHeader";
@@ -16,7 +18,10 @@ function LoginPage() {
     <section className="login-body">
       <LoginHeader />
 
-      <div className="promo-image"></div>
+      <div
+        className="promo-image"
+        style={{ backgroundImage: { promoImage } }}
+      ></div>
       {loginData || signupData ? (
         <LoginLoading
           loginData={loginData}

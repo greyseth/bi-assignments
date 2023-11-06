@@ -62,6 +62,7 @@
 .file-list ul {
   list-style: none;
   background-color: var(--primary-color);
+  overflow-y: scroll;
 }
 
 .file-list li {

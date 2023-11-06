@@ -8,6 +8,8 @@
 
 .promo-image {
   background-color: darkblue;
+  background-image: url("../../assets/img/promo-img.jpg");
+  background-size: cover;
 }
 
 .login-form {

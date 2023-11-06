@@ -26,12 +26,11 @@ function AssignLoading({ setAccount, setLoading, setAssignData, setError }) {
 
             //Loads assignment data
             const assReq = await getRequest("assignments/" + assign_id);
-            console.log(assReq);
             if (assReq.error) setError(assReq.error);
             else {
               if (!assReq) setError("Assignment not found");
               else {
-                if (!assReq.attachments) assReq.attachments = [];
+                if (!assReq.data.attachments) assReq.attachments = [];
 
                 setAssignData(assReq.data);
               }

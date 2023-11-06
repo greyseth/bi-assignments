@@ -120,6 +120,10 @@ header .header-account {
   text-align: right;
 }
 
+.header-account:hover {
+  cursor: pointer;
+}
+
 .green-button {
   background-color: var(--primary-item-color);
   border-radius: 15px;

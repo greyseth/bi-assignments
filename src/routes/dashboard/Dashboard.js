@@ -11,7 +11,6 @@ import ClassMenu from "./components/ClassMenu";
 import DashControls from "./components/DashControls";
 import { getRequest, postRequest } from "../../api/API";
 
-//TODO: Add error message
 function Dashboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(undefined);

@@ -21,6 +21,7 @@ function SubjectForm({ setAddSubject, classData, setClassData }) {
           setClassData={setClassData}
           subjectInput={subjectInput}
           setError={setError}
+          setAddSubject={setAddSubject}
         />
       ) : (
         <Error
@@ -58,10 +59,11 @@ function Uploading({
         subjects: classData.subjects,
       });
 
-      //TODO: Validate this function
       if (req.error) setError(req.error);
       else {
-        setClassData((prev) => (prev.subjects = req.data));
+        let newClassData = classData;
+        newClassData.subjects = req.data;
+        setClassData(newClassData);
         setAddSubject(false);
       }
 

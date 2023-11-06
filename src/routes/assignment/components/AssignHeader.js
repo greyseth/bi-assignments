@@ -22,7 +22,10 @@ function AssignHeader({ account }) {
           Return
         </button>
       </div>
-      <div className="header-account">
+      <div
+        className="header-account"
+        onClick={() => nav("/user/" + account.user_id)}
+      >
         <h2>{account ? account.username : "Loading..."}</h2>
         <img src={accIcon} className="svg-white" />
       </div>

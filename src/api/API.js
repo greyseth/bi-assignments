@@ -1,4 +1,4 @@
-const hostname = "http://localhost:3001/";
+const hostname = "https://assignment-api.greyseth.repl.co/";
 
 async function getRequest(endpoint) {
   const response = await fetch(hostname + endpoint, {

@@ -7,25 +7,21 @@ import UserLoading from "./components/UserLoading";
 import UserContent from "./components/UserContent";
 import UserError from "./components/UserError";
 
-const dummyAccountData = {
-  id: 1,
-  username: "Greyseth",
-  email: "anargya2gilland@gmail.com",
-  bio: "I am a professional idiot",
-};
-
 function UserPage() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(undefined);
 
-  const [account, setAccount] = useState({ id: 1 });
-  const [viewAccount, setViewAccount] = useState(dummyAccountData);
-
-  let { user_id } = useParams();
+  const [account, setAccount] = useState(undefined);
+  const [viewAccount, setViewAccount] = useState(undefined);
 
   return (
     <div className="user-body">
-      <UserHeader />
+      <UserHeader
+        viewAccount={viewAccount}
+        setViewAccount={setViewAccount}
+        setLoading={setLoading}
+        account={account}
+      />
 
       {loading ? (
         <UserLoading
