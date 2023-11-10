@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //Component imports
 import ErrorPage from "./routes/error/ErrorPage";
 import LoginPage from "./routes/login/LoginPage";
+import RecoveryPage from "./routes/recovery/RecoveryPage";
 import Dashboard from "./routes/dashboard/Dashboard";
 import ClassPage from "./routes/class/ClassPage";
 import AssignmentView from "./routes/assignment/AssignmentView";
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/recovery",
+    element: <RecoveryPage />,
     errorElement: <ErrorPage />,
   },
   {

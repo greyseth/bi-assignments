@@ -145,6 +145,11 @@ header .header-account {
     brightness(77%) contrast(144%);
 }
 
+.svg-red {
+  filter: invert(10%) sepia(98%) saturate(7451%) hue-rotate(15deg)
+    brightness(101%) contrast(121%);
+}
+
 .svg-darkred {
   filter: invert(15%) sepia(34%) saturate(6770%) hue-rotate(9deg)
     brightness(92%) contrast(108%);
